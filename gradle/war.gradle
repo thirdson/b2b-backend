@@ -1,0 +1,13 @@
+apply plugin: "war"
+
+bootWar {
+    mainClassName = "com.goxtx.b2b.admin.GoXtxb2BAdminApp"
+    includes = ["WEB-INF/**", "META-INF/**"]
+}
+
+war {
+    enabled = true
+    archiveExtension = "war.original"
+    includes = ["WEB-INF/**", "META-INF/**"]
+
+}
